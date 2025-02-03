@@ -8,7 +8,7 @@
 
 ```console
 $ go build
-$ ./thorin RECORDS.csv
+$ ./thorin -f RECORDS.csv -t dd.mm.yyyy:dd.mm.yyyy
 ```
 
 ## License

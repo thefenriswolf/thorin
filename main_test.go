@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -14,7 +13,7 @@ func TestIsIncome(t *testing.T) {
 		{"Einnahme", true},
 	}
 	for _, tt := range tests {
-		testname := fmt.Sprintf("%s", tt.a)
+		testname := tt.a
 		t.Run(testname, func(t *testing.T) {
 			ans := isIncome(tt.a)
 			if ans != tt.want {

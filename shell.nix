@@ -10,5 +10,5 @@ in pkgs.mkShell {
     # keep this line if you use bash
     pkgs.bashInteractive
   ];
-  shellHook = "go build -ldflags '-s -w'";
+  shellHook = "CGO_ENABLED=0 go build -ldflags '-s -w'";
 }
