@@ -9,7 +9,12 @@ import (
 )
 
 func printHelp() {
-	fmt.Println("TODO: help text")
+	name := "NAME:\n\tthorin - CLI finance tool"
+	usage := "USAGE:\n\tthorin [command] --file input.csv --timeframe DD.MM.YYYY:DD.MM.YYYY"
+	commands := "COMMANDS:\n"
+	version := "VERSION:\n\tv20250213, by thefenriswolf"
+	ret := name + "\n" + usage + "\n" + commands + "\n" + version
+	fmt.Println(ret)
 }
 
 func lenCheck(i int, nArgs int) {

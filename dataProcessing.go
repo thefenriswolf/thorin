@@ -66,6 +66,8 @@ func isIncome(direction string) bool {
 	}
 	if direction == "Einnahme" {
 		income = true
+	} else {
+		income = false
 	}
 	return income
 }
